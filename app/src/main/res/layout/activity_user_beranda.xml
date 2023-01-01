@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/peakpx_dashboard"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="750px"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:src="@drawable/isk_logo" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinsextra"
+            android:text="@string/isk"
+            android:textColor="#6F0D36"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tombolThread"
+                    style="@style/CardStyle">
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <ImageView
+                            style="@style/Icon"
+                            android:background="@drawable/circle_background_one"
+                            android:src="@drawable/ic_baseline_description_24" />
+
+                        <TextView
+                            style="@style/Title"
+                            android:text="Thread" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tombolProfil"
+                    style="@style/CardStyle">
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <ImageView
+                            style="@style/Icon"
+                            android:background="@drawable/circle_background_two"
+                            android:src="@drawable/ic_baseline_person_24" />
+
+                        <TextView
+                            style="@style/Title"
+                            android:text="Profil" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tombolAbout"
+                    style="@style/CardStyle">
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <ImageView
+                            style="@style/Icon"
+                            android:background="@drawable/circle_background_three"
+                            android:src="@drawable/ic_baseline_priority_high_24" />
+
+                        <TextView
+                            style="@style/Title"
+                            android:text="About" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tombolKeluar"
+                    style="@style/CardStyle">
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <ImageView
+                            style="@style/Icon"
+                            android:background="@drawable/circle_background_four"
+                            android:src="@drawable/ic_baseline_logout_24" />
+
+                        <TextView
+                            style="@style/Title"
+                            android:text="Keluar" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
